@@ -1,0 +1,26 @@
+[package]
+name = "Sy2N_ANU"
+version = "0.1.0"
+authors = ["adam <awkure@protonmail.ch>"]
+repository = "https://github.com/awkure/Sy2N_ANU"
+description = "A small wrapper for ANU quantum random numbers server json api"
+
+[dependencies]
+curl = "0.4.12"
+serde_json = "1.0.20"
+serde_derive = "1.0.66"
+serde = "1.0.66"
+clippy = "0.0.207"
+clap = "2.31.2"
+structopt = "0.2.10"
+structopt-derive = "0.2.10"
+loggerv = "0.7.1"
+log = "0.4.2"
+
+[lib]
+name = "Sy2N_ANU"
+path = "src/lib.rs"
+
+[[bin]]
+name = "Sy2N_ANU"
+path = "src/core.rs"
